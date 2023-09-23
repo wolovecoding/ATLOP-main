@@ -1,0 +1,23 @@
+vertexSet: 是一个数组，存储实体的。
+    每一个实体提及都是一个对象
+    sent_id:int
+    pos:[0,4]
+    type:str
+    name:str
+
+labels:也是一个数组，存储的是实体间的关系
+    每一个关系都是一个对象
+    r: ”“  存的是关系
+    h:0     实体在vertexSet里的索引
+    t:2     实体在vertexSet里的索引
+    evidence:[0,1]  evidence里面存的是佐证这个关系的句子索引
+
+title: 文章标题
+
+sents： 是一个数组，里面存的是句子。
+    每一个句子不是字符串，而是token。
+    "sents": [
+            [
+                "Zest",
+                "Airways",
+                ...

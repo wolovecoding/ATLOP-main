@@ -1,0 +1,216 @@
+2023-09-23 18:53:24,756 INFO    StreamThr :66895 [internal.py:wandb_internal():86] W&B internal server running at pid: 66895, started at: 2023-09-23 18:53:24.755146
+2023-09-23 18:53:24,759 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status
+2023-09-23 18:53:24,761 INFO    WriterThread:66895 [datastore.py:open_for_write():85] open: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/run-658201qi.wandb
+2023-09-23 18:53:24,764 DEBUG   SenderThread:66895 [sender.py:send():380] send: header
+2023-09-23 18:53:24,764 DEBUG   SenderThread:66895 [sender.py:send():380] send: run
+2023-09-23 18:53:25,612 INFO    SenderThread:66895 [dir_watcher.py:__init__():211] watching files in: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files
+2023-09-23 18:53:25,612 INFO    SenderThread:66895 [sender.py:_start_run_threads():1122] run started: 658201qi with start time 1695466404.755549
+2023-09-23 18:53:25,624 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: check_version
+2023-09-23 18:53:25,624 DEBUG   SenderThread:66895 [sender.py:send_request():407] send_request: check_version
+2023-09-23 18:53:25,911 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: run_start
+2023-09-23 18:53:25,914 DEBUG   HandlerThread:66895 [system_info.py:__init__():32] System info init
+2023-09-23 18:53:25,914 DEBUG   HandlerThread:66895 [system_info.py:__init__():47] System info init done
+2023-09-23 18:53:25,914 INFO    HandlerThread:66895 [system_monitor.py:start():181] Starting system monitor
+2023-09-23 18:53:25,915 INFO    HandlerThread:66895 [system_monitor.py:probe():201] Collecting system info
+2023-09-23 18:53:25,915 INFO    SystemMonitor:66895 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-23 18:53:25,916 DEBUG   HandlerThread:66895 [system_info.py:probe():196] Probing system
+2023-09-23 18:53:25,917 INFO    SystemMonitor:66895 [interfaces.py:start():190] Started cpu monitoring
+2023-09-23 18:53:25,918 INFO    SystemMonitor:66895 [interfaces.py:start():190] Started disk monitoring
+2023-09-23 18:53:25,920 INFO    SystemMonitor:66895 [interfaces.py:start():190] Started gpuapple monitoring
+2023-09-23 18:53:25,925 INFO    SystemMonitor:66895 [interfaces.py:start():190] Started memory monitoring
+2023-09-23 18:53:25,927 INFO    SystemMonitor:66895 [interfaces.py:start():190] Started network monitoring
+2023-09-23 18:53:25,932 DEBUG   HandlerThread:66895 [gitlib.py:_init_repo():53] git repository is invalid
+2023-09-23 18:53:25,932 DEBUG   HandlerThread:66895 [system_info.py:probe():244] Probing system done
+2023-09-23 18:53:25,932 DEBUG   HandlerThread:66895 [system_monitor.py:probe():210] {'os': 'macOS-13.4.1-arm64-arm-64bit', 'python': '3.8.18', 'heartbeatAt': '2023-09-23T10:53:25.916586', 'startedAt': '2023-09-23T10:53:24.745376', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/wangzy/Downloads/ATLOP-main/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'wangdeMac-Studio.local', 'username': 'wangzy', 'executable': '/Users/wangzy/Documents/anaconda3/envs/ATLOP/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 926.3517189025879, 'used': 11.011035919189453}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 32.0}}
+2023-09-23 18:53:25,932 INFO    HandlerThread:66895 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-23 18:53:25,933 INFO    HandlerThread:66895 [system_monitor.py:probe():214] Publishing system info
+2023-09-23 18:53:25,933 DEBUG   HandlerThread:66895 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-23 18:53:25,934 DEBUG   HandlerThread:66895 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-23 18:53:25,934 DEBUG   HandlerThread:66895 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-23 18:53:26,620 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/requirements.txt
+2023-09-23 18:53:26,621 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/conda-environment.yaml
+2023-09-23 18:53:27,807 DEBUG   HandlerThread:66895 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-23 18:53:27,808 INFO    HandlerThread:66895 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-23 18:53:27,812 DEBUG   SenderThread:66895 [sender.py:send():380] send: files
+2023-09-23 18:53:27,812 INFO    SenderThread:66895 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-09-23 18:53:27,818 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 18:53:27,819 DEBUG   SenderThread:66895 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 18:53:27,822 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:53:28,313 DEBUG   SenderThread:66895 [sender.py:send():380] send: telemetry
+2023-09-23 18:53:28,452 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:53:28,452 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:53:28,452 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:53:28,628 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/conda-environment.yaml
+2023-09-23 18:53:28,629 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/wandb-metadata.json
+2023-09-23 18:53:29,748 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:53:29,748 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:53:29,748 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:53:30,324 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:32,616 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:53:32,617 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:53:32,617 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:53:32,617 INFO    wandb-upload_0:66895 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connection.py", line 642, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connection.py", line 783, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 469, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 513, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connection.py", line 642, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/connection.py", line 783, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 469, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 513, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2549, in upload_file
+    response = self._upload_file_session.put(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2580, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 2549, in upload_file
+    response = self._upload_file_session.put(
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2023-09-23 18:53:35,350 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:36,868 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:53:36,869 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:53:36,869 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:53:39,687 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/output.log
+2023-09-23 18:53:40,898 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:41,697 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/output.log
+2023-09-23 18:53:42,824 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 18:53:42,825 DEBUG   SenderThread:66895 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 18:53:42,829 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:53:45,712 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:53:45,712 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:53:45,713 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:53:46,206 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:51,556 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:51,742 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/output.log
+2023-09-23 18:53:56,586 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:53:57,775 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/config.yaml
+2023-09-23 18:53:57,829 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 18:53:57,829 DEBUG   SenderThread:66895 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 18:53:57,832 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:54:01,797 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/output.log
+2023-09-23 18:54:02,585 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:03,863 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/eventextract/DocRED/658201qi/wandb-metadata.json?Expires=1695552810&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=gLoaMjaCcxQgkKOGNY0wW5JdcnNKZUkkiN0ZbKIakX%2F29mD15dbidTqmzMJeJ2z9d%2FbcSVj4gDgRasWq2m62JpxTdXCfvG5gJhHn%2FuS39bjVr8xACL0dnbr2BDGJNRgvr%2BaCO8%2FTLnt1tbUVFGFNYNFx90e%2FBlLkbXQIXCA2vN9hccpf0saStiKERl4RTFm9MkrZd4OaIwkv3W45vhqK6Tc6N7R4VLuR0LPz6ORqk2xeds%2BR%2F76ID5KUfA%2FZASMhX79TtmUHY3x%2F2fzZwUTWbepHR%2FAfQT5lKseARz5XcHrio3vQr6ppz4ndpIoNComrQWNQcUEVN3i2BJAAD3S4qQ%3D%3D: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2023-09-23 18:54:03,864 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '801'}
+2023-09-23 18:54:03,864 ERROR   wandb-upload_0:66895 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-09-23 18:54:07,603 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:12,624 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:12,839 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:54:12,840 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 18:54:12,843 DEBUG   SenderThread:66895 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 18:54:17,858 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:22,884 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:25,933 DEBUG   SystemMonitor:66895 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-23 18:54:27,843 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:54:32,932 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:35,760 DEBUG   SenderThread:66895 [sender.py:send():380] send: telemetry
+2023-09-23 18:54:35,763 DEBUG   SenderThread:66895 [sender.py:send():380] send: stats
+2023-09-23 18:54:35,763 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:37,954 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:40,265 INFO    wandb-upload_0:66895 [upload_job.py:push():131] Uploaded file /var/folders/3z/l6vpvv313b5cfw3390pbcyk80000gn/T/tmpx1_qk0rpwandb/jdnqwmml-wandb-metadata.json
+2023-09-23 18:54:40,782 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:42,848 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:54:45,803 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:47,998 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:50,826 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:53,021 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:54:55,846 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:54:55,943 DEBUG   SenderThread:66895 [sender.py:send():380] send: stats
+2023-09-23 18:54:57,850 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:55:00,963 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:03,062 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:05,992 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:07,124 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/config.yaml
+2023-09-23 18:55:07,704 WARNING FileStreamThread:66895 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: ('Connection aborted.', OSError(65, 'No route to host')). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x118ac92b0>>, timeout=180), args: ('https://api.wandb.ai/files/eventextract/DocRED/658201qi/file_stream',), kwargs: {'json': {'complete': False, 'failed': False, 'dropped': 0, 'uploaded': []}}
+2023-09-23 18:55:08,088 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:11,632 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:12,855 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:55:16,166 INFO    Thread-17 :66895 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_185324-658201qi/files/output.log
+2023-09-23 18:55:16,706 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:18,131 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:21,731 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:23,147 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:25,950 DEBUG   SenderThread:66895 [sender.py:send():380] send: stats
+2023-09-23 18:55:26,955 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:27,861 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 18:55:31,977 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:33,192 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:36,994 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 18:55:38,212 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-23 18:55:42,019 DEBUG   HandlerThread:66895 [handler.py:handle_request():144] handle_request: status_report

@@ -1,0 +1,26 @@
+
+Example:   0%|                                                                                                                                                | 0/3053 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/wangzy/Documents/anaconda3/envs/ATLOP/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/wangzy/.vscode/extensions/ms-python.python-2023.16.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/Users/wangzy/Downloads/ATLOP-main/train.py", line 228, in <module>
+    main()
+  File "/Users/wangzy/Downloads/ATLOP-main/train.py", line 197, in main
+    train_features = read(train_file, tokenizer, max_seq_length=args.max_seq_length)
+  File "/Users/wangzy/Downloads/ATLOP-main/prepro.py", line 57, in read_docred
+    r = int(docred_rel2id[label['r']])
+ValueError: invalid literal for int() with base 10: 'headquarters location'

@@ -1,0 +1,67 @@
+2023-09-23 19:16:08,073 INFO    StreamThr :68363 [internal.py:wandb_internal():86] W&B internal server running at pid: 68363, started at: 2023-09-23 19:16:08.073014
+2023-09-23 19:16:08,076 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status
+2023-09-23 19:16:08,078 INFO    WriterThread:68363 [datastore.py:open_for_write():85] open: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/run-4790g5t1.wandb
+2023-09-23 19:16:08,081 DEBUG   SenderThread:68363 [sender.py:send():380] send: header
+2023-09-23 19:16:08,081 DEBUG   SenderThread:68363 [sender.py:send():380] send: run
+2023-09-23 19:16:09,647 INFO    SenderThread:68363 [dir_watcher.py:__init__():211] watching files in: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files
+2023-09-23 19:16:09,648 INFO    SenderThread:68363 [sender.py:_start_run_threads():1122] run started: 4790g5t1 with start time 1695467768.073899
+2023-09-23 19:16:09,664 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: check_version
+2023-09-23 19:16:09,664 DEBUG   SenderThread:68363 [sender.py:send_request():407] send_request: check_version
+2023-09-23 19:16:14,046 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:14,053 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: run_start
+2023-09-23 19:16:14,056 DEBUG   HandlerThread:68363 [system_info.py:__init__():32] System info init
+2023-09-23 19:16:14,056 DEBUG   HandlerThread:68363 [system_info.py:__init__():47] System info init done
+2023-09-23 19:16:14,056 INFO    HandlerThread:68363 [system_monitor.py:start():181] Starting system monitor
+2023-09-23 19:16:14,056 INFO    SystemMonitor:68363 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-23 19:16:14,057 INFO    HandlerThread:68363 [system_monitor.py:probe():201] Collecting system info
+2023-09-23 19:16:14,057 INFO    SystemMonitor:68363 [interfaces.py:start():190] Started cpu monitoring
+2023-09-23 19:16:14,058 DEBUG   HandlerThread:68363 [system_info.py:probe():196] Probing system
+2023-09-23 19:16:14,059 INFO    SystemMonitor:68363 [interfaces.py:start():190] Started disk monitoring
+2023-09-23 19:16:14,061 INFO    SystemMonitor:68363 [interfaces.py:start():190] Started gpuapple monitoring
+2023-09-23 19:16:14,065 INFO    SystemMonitor:68363 [interfaces.py:start():190] Started memory monitoring
+2023-09-23 19:16:14,067 INFO    SystemMonitor:68363 [interfaces.py:start():190] Started network monitoring
+2023-09-23 19:16:14,070 DEBUG   HandlerThread:68363 [gitlib.py:_init_repo():53] git repository is invalid
+2023-09-23 19:16:14,070 DEBUG   HandlerThread:68363 [system_info.py:probe():244] Probing system done
+2023-09-23 19:16:14,070 DEBUG   HandlerThread:68363 [system_monitor.py:probe():210] {'os': 'macOS-13.4.1-arm64-arm-64bit', 'python': '3.8.18', 'heartbeatAt': '2023-09-23T11:16:14.058822', 'startedAt': '2023-09-23T11:16:08.064804', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/wangzy/Downloads/ATLOP-main/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'wangdeMac-Studio.local', 'username': 'wangzy', 'executable': '/Users/wangzy/Documents/anaconda3/envs/ATLOP/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 926.3517189025879, 'used': 11.011035919189453}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 32.0}}
+2023-09-23 19:16:14,070 INFO    HandlerThread:68363 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-23 19:16:14,070 INFO    HandlerThread:68363 [system_monitor.py:probe():214] Publishing system info
+2023-09-23 19:16:14,070 DEBUG   HandlerThread:68363 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-23 19:16:14,071 DEBUG   HandlerThread:68363 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-23 19:16:14,071 DEBUG   HandlerThread:68363 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-23 19:16:14,675 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/conda-environment.yaml
+2023-09-23 19:16:14,675 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/requirements.txt
+2023-09-23 19:16:15,845 DEBUG   HandlerThread:68363 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-23 19:16:15,846 INFO    HandlerThread:68363 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-23 19:16:15,851 DEBUG   SenderThread:68363 [sender.py:send():380] send: files
+2023-09-23 19:16:15,851 INFO    SenderThread:68363 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-09-23 19:16:15,860 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 19:16:15,860 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 19:16:15,861 DEBUG   SenderThread:68363 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 19:16:16,683 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/conda-environment.yaml
+2023-09-23 19:16:16,684 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/wandb-metadata.json
+2023-09-23 19:16:18,629 DEBUG   SenderThread:68363 [sender.py:send():380] send: telemetry
+2023-09-23 19:16:19,635 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:20,602 INFO    wandb-upload_0:68363 [upload_job.py:push():131] Uploaded file /var/folders/3z/l6vpvv313b5cfw3390pbcyk80000gn/T/tmpzc5l3oz3wandb/gbmkk2gn-wandb-metadata.json
+2023-09-23 19:16:22,712 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/output.log
+2023-09-23 19:16:24,723 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/output.log
+2023-09-23 19:16:25,572 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:30,596 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:30,864 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 19:16:30,864 DEBUG   SenderThread:68363 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 19:16:30,868 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 19:16:32,761 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/output.log
+2023-09-23 19:16:36,373 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:41,400 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:42,813 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/config.yaml
+2023-09-23 19:16:45,868 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 19:16:45,868 DEBUG   SenderThread:68363 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 19:16:45,872 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 19:16:47,640 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:48,838 INFO    Thread-17 :68363 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wangzy/Downloads/ATLOP-main/wandb/run-20230923_191608-4790g5t1/files/output.log
+2023-09-23 19:16:52,663 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:16:57,682 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:17:00,874 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-23 19:17:00,875 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-23 19:17:00,876 DEBUG   SenderThread:68363 [sender.py:send_request():407] send_request: stop_status
+2023-09-23 19:17:03,541 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
+2023-09-23 19:17:08,560 DEBUG   HandlerThread:68363 [handler.py:handle_request():144] handle_request: status_report
