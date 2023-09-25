@@ -36,9 +36,9 @@ class DocREModel(nn.Module):
         offset = 1 if self.config.transformer_type in ["bert", "roberta"] else 0
         n, h, _, c = attention.size()
         hss, tss, rss = [], [], []
-        for i in range(len(entity_pos)):
-            entity_embs, entity_atts = [], []
-            for e in entity_pos[i]:
+        for i in range(len(entity_pos)): # 文档中有几个句子
+            entity_embs, entity_atts = [], []  # 按照vertexSet里的顺序，获取实体的embeddings和attentions
+            for e in entity_pos[i]: # 遍历文档第i个句子中的实体
                 if len(e) > 1:
                     e_emb, e_att = [], []
                     for start, end in e:
@@ -63,6 +63,8 @@ class DocREModel(nn.Module):
                 entity_embs.append(e_emb)
                 entity_atts.append(e_att)
 
+            # 原来是一个数组，数组里的每一个元素存的都是一个tensor
+            # 经过stack后，这个大数组就变成了Tensor。第一个维度是实体，第二个维度是实体内部
             entity_embs = torch.stack(entity_embs, dim=0)  # [n_e, d]
             entity_atts = torch.stack(entity_atts, dim=0)  # [n_e, h, seq_len]
 
@@ -73,15 +75,15 @@ class DocREModel(nn.Module):
             h_att = torch.index_select(entity_atts, 0, ht_i[:, 0])
             t_att = torch.index_select(entity_atts, 0, ht_i[:, 1])
             ht_att = (h_att * t_att).mean(1)
-            ht_att = ht_att / (ht_att.sum(1, keepdim=True) + 1e-5)
-            rs = contract("ld,rl->rd", sequence_output[i], ht_att)
+            ht_att = ht_att / (ht_att.sum(1, keepdim=True) + 1e-5) # 1e-5是为了避免除数为0
+            rs = contract("ld,rl->rd", sequence_output[i], ht_att)  # 收缩操作，rs即学习到了句子编码，又学习到了头尾
             hss.append(hs)
             tss.append(ts)
             rss.append(rs)
         hss = torch.cat(hss, dim=0)
         tss = torch.cat(tss, dim=0)
         rss = torch.cat(rss, dim=0)
-        return hss, rss, tss
+        return hss, rss, tss  # 长度和
 
     def forward(self,
                 input_ids=None,

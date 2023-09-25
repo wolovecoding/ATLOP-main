@@ -100,7 +100,7 @@ def read_docred(file_in, tokenizer, max_seq_length=1024):
                    'entity_pos': entity_pos, # entity_pos里是一个二级数组，第一层存的是句子索引，第二层存的是实体的位置[0,1] 0是起始位置，1是结束位置
                    'labels': relations, # 关系的标签[rel_num,rel_种类数]
                    'hts': hts, # [h,t] 头结点和尾节点在vertexSet中的序号 
-                   'title': sample['title'],
+                   'title': sample['title'], 
                    }
         features.append(feature)
 
